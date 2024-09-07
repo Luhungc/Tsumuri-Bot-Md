@@ -250,7 +250,6 @@ return steks(`> _𝗜𝗻𝗶 𝘀𝗲𝗺𝘂𝗮 𝗺𝗲𝗻𝘂𝗻𝘆𝗮 
 ╎│⚡︎」დ ${prefix}tidur *Ⓕ*
 ╎╠⊱⍤⃝⊰ɞ──『 *𝙶𝚊𝚖𝚎 𝙼𝚎𝚗𝚞* 』⏤͟͟͞͞ᖫ
 ╎╬───═╸
-╎│⚡︎」დ ${prefix}akinator *Ⓕ*
 ╎│⚡︎」დ ${prefix}asahotak *Ⓕ*
 ╎│⚡︎」დ ${prefix}caklontong *Ⓕ*
 ╎│⚡︎」დ ${prefix}casino *Ⓕ*
@@ -354,7 +353,6 @@ global.menugame = (prefix) => {
 return steks(`> _𝗜𝗻𝗶 𝗺𝗲𝗻𝘂 𝗴𝗮𝗺𝗲𝗻𝘆𝗮 𝘆𝗮 𝗸𝗮𝗸._
 ╭୧⍤⃝⊰ɞ──『 *𝙶𝚊𝚖𝚎 𝙼𝚎𝚗𝚞* 』⏤͟͟͞͞ᖫ
 ╎╦───═╸
-╎│⚡︎」დ ${prefix}akinator *Ⓕ*
 ╎│⚡︎」დ ${prefix}asahotak *Ⓕ*
 ╎│⚡︎」დ ${prefix}caklontong *Ⓕ*
 ╎│⚡︎」დ ${prefix}casino *Ⓕ*
