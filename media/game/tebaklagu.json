@@ -1595,11 +1595,6 @@
     "soal": "https://p.scdn.co/mp3-preview/e92e8d9265b15fad9b2ee2dc4f3b9f38d7005fe8"
   },
   {
-    "jawaban": "Melukis Senja",
-    "artis": "Budi Doremi",
-    "soal": "https://p.scdn.co/mp3-preview/18318fc42241f5e8fe826d5096d6cd141bab8d81"
-  },
-  {
     "jawaban": "Menua Bersamamu",
     "artis": "Tri Suaka",
     "soal": "https://p.scdn.co/mp3-preview/6f26caa86644b12dfe3719a0a7231420fd340b04"
@@ -3813,5 +3808,10 @@
     "soal": "https://p.scdn.co/mp3-preview/ca3f2b83a604bdb70e8f4f305eb9be48373f44f4", 
     "jawaban": "EXCITE", 
     "artis": "Daichi Miura"
+  },
+  {
+    "soal": "https://p.scdn.co/mp3-preview/74da8811e661b99dd864d6036e84b30aec9df5fc", 
+    "jawaban": "Be The One", 
+    "artis": "Pandora, Beverly"
   }
 ]
