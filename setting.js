@@ -17,7 +17,7 @@ global.gcbuyer = "-"
 global.thumbnail = `https://i.ibb.co.com/QmsxnsJ/Rezz.png`
 global.thumbnail2 = `https://i.ibb.co.com/G3tLg7J/logo-ts23-CB8-DBAA.png`
 global.autobio = false // AutoBio
-global.autoread = false // ReadChat 
+global.autoread = true // ReadChat 
 global.autoreadsw = false
 global.Ghost = '`'
 global.versibot = 'V 2.0.0'
@@ -29,12 +29,8 @@ global.wm = "Tsumuri-Md"
 global.onlypc = false
 global.onlygc = false
 //=================================================//
-//cpanel
-global.domain = "-"
-global.apikey = "-"
-global.capikey = "-"
-global.egg = "15"
-global.loc = "1"
+//apikey
+global.lol = "ef9e2cf41e82d53b62533a88"
 
 //Send Pay
 global.dana = "085643516329"
@@ -45,15 +41,6 @@ global.qris = "-"
 //limit, balance & rpg
 global.limitawal = 20
 global.balanceawal = 15000
-global.rpg = {
-darahawal: 100,
-besiawal: 15,
-goldawal: 10,
-emeraldawal: 5,
-umpanawal: 5,
-potionawal: 1
-}
-
 global.wlcm = []
 global.wlcmm = []
 
@@ -67,6 +54,7 @@ global.tictactoe = {};
 global.petakbom = {};
 global.kuis = {};
 global.siapakahaku = {};
+global.trivia = {};
 global.asahotak = {};
 global.susunkata = {};
 global.caklontong = {};
@@ -75,12 +63,85 @@ global.tebaklagu = {};
 global.tebakgambar = {};
 global.tebakkimia = {};
 global.tebakkata = {};
+global.lengkapikal = {};
 global.tebakkalimat = {};
 global.tebakbendera = {};
 global.tebakanime = {};
 global.kuismath = {};
 global.gamewaktu = 60
-
+// rpg
+global.rpg = {
+    emoticon(string) {
+        string = string.toLowerCase()
+        let emot = {
+            level: '📊',
+            limit: '🎫',
+            health: '❤️',
+            exp: '✨',
+            atm: '💳',
+            money: '💰',
+            bank: '🏦',
+            potion: '🥤',
+            diamond: '💎',
+            common: '📦',
+            uncommon: '🛍️',
+            mythic: '🎁',
+            legendary: '🗃️',
+            superior: '💼',
+            pet: '🔖',
+            trash: '🗑',
+            armor: '🥼',
+            sword: '⚔️',
+            makanancentaur: "🥗",
+            makanangriffin: "🥙",
+            makanankyubi: "🍗",
+            makanannaga: "🍖",
+            makananpet: "🥩",
+            makananphonix: "🧀",
+            pickaxe: '⛏️',
+            fishingrod: '🎣',
+            wood: '🪵',
+            rock: '🪨',
+            string: '🕸️',
+            horse: '🐴',
+            cat: '🐱',
+            dog: '🐶',
+            fox: '🦊',
+            robo: '🤖',
+            petfood: '🍖',
+            iron: '⛓️',
+            gold: '🪙',
+            emerald: '❇️',
+            upgrader: '🧰',
+            bibitanggur: '🌱',
+            bibitjeruk: '🌿',
+            bibitapel: '☘️',
+            bibitmangga: '🍀',
+            bibitpisang: '🌴',
+            anggur: '🍇',
+            jeruk: '🍊',
+            apel: '🍎',
+            mangga: '🥭',
+            pisang: '🍌',
+            botol: '🍾',
+            kardus: '📦',
+            kaleng: '🏮',
+            plastik: '📜',
+            gelas: '🧋',
+            chip: '♋',
+            umpan: '🪱',
+            naga: "🐉",
+            phonix: "🦅",
+            kyubi: "🦊",
+            griffin: "🦒",
+            centaur: "🎠",
+            skata: '🧩'
+        }
+        let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
+        if (!results.length) return ''
+        else return emot[results[0][0]]
+    }
+}
 // CUMAN SIMBOL MENU UBAH AJA SESUKA KALIAN
 global.atas = '┏━━━━━━━━━━━━━━━━'
 global.tengah = '┣━━━━━━━━━━━━━━━━'
@@ -88,18 +149,19 @@ global.bawah = '┗━━━━━━━━━━━━━━━━'
 global.garis = '┃'
 //mess
 global.mess = {
-    premium: ('ᴀᴋꜱᴇꜱ ᴅɪ ᴛᴏʟᴀᴋ! ᴋʜᴜꜱᴜꜱ ᴘʀᴇᴍɪᴜᴍ!'),
-    done: ('sᴇʟᴇsᴀɪ ᴋᴀᴋ'),
-    owner: ('ᴀᴋꜱᴇꜱ ᴅɪ ᴛᴏʟᴀᴋ! ᴋʜᴜꜱᴜꜱ ᴏᴡɴᴇʀ!'),
-    wait: ('ᴘʀosᴇs...!'),
-    group: 'κнusus ԍʀouᴘ cнᴀт!',
-    pribadi: 'κнusus ᴘʀɪᴠᴀᴛᴇ cнᴀт!',
-    admin: 'κнusus ᴀᴅмιɴ ԍʀouᴘ!',
-    botAdmin: 'ʙoт нᴀʀus ᴀᴅмιɴ!',
-    linkvalid: 'ʟιɴκ тᴀuтᴀɴ тιᴅᴀκ vᴀʟιᴅ!', 
-    error: 'ᴇʀoʀ тᴇʀנᴀᴅι κᴇsᴀʟᴀнᴀɴ!',
-    limit: `ʟιмιт κᴀмu suᴅᴀн нᴀʙιs!\nκᴇтικ .ʙuʏʟιмιт uɴтuκ мᴇмʙᴇʟι ʟιмιт`,
-    regis: (`κᴀмu ʙᴇʟoм тᴇʀᴅᴀғтᴀʀ\nsιʟᴀнκᴀɴ ᴅᴀғтᴀʀ ᴅᴇɴԍᴀɴ cᴀʀᴀ .ᴅᴀғтᴀʀ`),
+    premium: ('Command ini hanya bisa digunakan oleh user premium!'),
+    done: ('Selesai kak.'),
+    owner: ('Kamu tidak bisa menggunakan command ini!'),
+    wait: ('Tunggu sebentar...!'),
+    group: 'Command ini hanya bisa digunakan di group chat!',
+    pribadi: 'Command ini hanya bisa digunakan di private chat!',
+    admin: 'Command ini hanya bisa digunakan oleh admin group!',
+    botAdmin: 'Command ini hanya bisa digunakan ketika bot sudah menjadi admin!',
+    linkvalid: 'Link sepertinya tidak valid, coba link yang lainya!', 
+    error: 'Sepertinya terjadi kesalahan, coba lagi nanti!',
+    limit: `Limit kamu sudah habis, Silahkan beli limit dengan .limit atau mainkan game yang bisa menghasilkan limit`,
+    ban: `Kamu telah diban oleh owner, ajukan pertinjauan dengan .tinjau`,
+    regis: (`Kamu harus daftar terlebih dahulu, dengan cara .daftar`),
 }
 //=================================================//
 let file = require.resolve(__filename)
